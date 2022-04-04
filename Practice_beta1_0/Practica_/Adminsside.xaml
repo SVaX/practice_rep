@@ -1,0 +1,29 @@
+﻿<Page x:Class="Practica_.Adminsside"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practica_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="670"
+      Title="Adminsside">
+
+    <Canvas Background="White">
+        <DataGrid IsReadOnly="True" SelectedCellsChanged="itemsgrid_SelectedCellsChanged" x:Name="itemsgrid" Height="450" Width="300" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Наименование товара:" FontFamily="Segoe Print" FontSize="16" Canvas.Left="326"/>
+        <Border BorderThickness="1" BorderBrush="Black" Canvas.Left="332" Canvas.Top="33">
+            <TextBox x:Name="nametext" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Canvas.Top="38" Height="28" Canvas.Left="10" FontFamily="Segoe Print" FontSize="14"/>
+        </Border>
+        <Label Content="Цена" FontFamily="Segoe Print" FontSize="16" HorizontalAlignment="Center" Canvas.Top="68" VerticalAlignment="Top" Canvas.Left="326"/>
+        <Border BorderThickness="1" BorderBrush="Black" Canvas.Left="332" Canvas.Top="100">
+            <TextBox x:Name="pricetext" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Canvas.Top="38" Height="28" Canvas.Left="10" FontFamily="Segoe Print" FontSize="14"/>
+        </Border>
+        <Label Content="Описание" FontFamily="Segoe Print" FontSize="16" HorizontalAlignment="Center" Canvas.Top="130" VerticalAlignment="Top" Canvas.Left="326"/>
+        <Border BorderThickness="1" BorderBrush="Black" Height="191" Canvas.Left="332" Canvas.Top="160">
+            <TextBox x:Name="descriptiontext" HorizontalAlignment="Center" VerticalAlignment="Center" Width="268" Canvas.Top="38" Height="190" Canvas.Left="10" FontFamily="Segoe Print" FontSize="14"/>
+        </Border>
+        <Button x:Name="AddingGood" Content="Добавить" FontFamily="Segoe Print" FontSize="17" Canvas.Left="336" Canvas.Top="370" Height="28" Width="132" Click="AddingGood_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="ChangeGood" Content="Изменить" FontFamily="Segoe Print" FontSize="17" Canvas.Left="486" Canvas.Top="370" Height="28" Width="132" Click="ChangeGood_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="DeleteGood" Content="Удалить" FontFamily="Segoe Print" FontSize="17" Canvas.Left="410" Canvas.Top="412" Height="28" Width="132" Click="DeleteGood_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Page>

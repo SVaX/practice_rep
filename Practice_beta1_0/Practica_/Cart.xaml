@@ -1,0 +1,29 @@
+﻿<Page x:Class="Practica_.Cart"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practica_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="662"
+      Title="Cart">
+
+    <Canvas Background="White">
+        <ListBox x:Name="listbox" Height="450" Width="306" SelectionChanged="listbox_SelectionChanged"></ListBox>
+        <Label Content="Наименование товара:" FontFamily="Segoe Print" FontSize="16" Canvas.Left="323" Canvas.Top="6"/>
+
+        <Label Content="Цена" FontFamily="Segoe Print" FontSize="16" HorizontalAlignment="Center" Canvas.Top="81" VerticalAlignment="Top" Canvas.Left="323"/>
+        <Label Content="Описание" FontFamily="Segoe Print" FontSize="16" HorizontalAlignment="Center" Canvas.Top="152" VerticalAlignment="Top" Canvas.Left="323"/>
+        <Button x:Name="ToCartButton" Content="Убрать" FontFamily="Segoe Print" FontSize="17" Canvas.Left="333" Canvas.Top="385" Height="29" Width="141" Click="ToCartButton_Click"/>
+        <Button x:Name="ToCartGoing" Click="ToCartGoing_Click" Content="Обратно к выбору" FontFamily="Segoe Print" FontSize="17" Canvas.Left="479" Canvas.Top="385" Height="29"></Button>
+        <Border BorderThickness="1" BorderBrush="Black" Canvas.Top="119" Canvas.Left="323">
+            <TextBlock x:Name="pricetext" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268"  Height="28"  FontFamily="Segoe Print" FontSize="14"/>
+        </Border>
+        <Border BorderThickness="1" BorderBrush="Black" Canvas.Top="44" Canvas.Left="323">
+            <TextBlock x:Name="nametext" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268"  Height="28"  FontFamily="Segoe Print" FontSize="14"/>
+        </Border>
+        <Border BorderThickness="1" BorderBrush="Black" Canvas.Top="186" Canvas.Left="323">
+            <TextBlock x:Name="descriptiontext" HorizontalAlignment="Center" VerticalAlignment="Center" Width="268" Height="190" FontFamily="Segoe Print" FontSize="14" Canvas.Top="184"/>
+        </Border>
+    </Canvas>
+</Page>
