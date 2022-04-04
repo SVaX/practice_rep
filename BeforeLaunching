@@ -1,6 +1,6 @@
 Добавление базы данных в sql:
 
-Добавьте .mdf и .ldf файлы из архива bd.rar в Program Files/Microsoft Sql Server/MSSQL15.SQLEXPRESS/MSSQL/DATA
+Добавьте .mdf и .ldf файлы из архива bd_uvilirni_dom.zip в Program Files/Microsoft Sql Server/MSSQL15.SQLEXPRESS/MSSQL/DATA
 Правой кнопкой мыши нажмите по Database в MS Sql Server Management Studio
 Выберите из выпадающего меню Attach
 В этом меню нажмите Add
